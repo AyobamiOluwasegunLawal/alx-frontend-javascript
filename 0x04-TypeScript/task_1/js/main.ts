@@ -17,3 +17,4 @@ function printTeacher (firstName: string, lastName: string):string {
 	return result;
 }
 
+printTeacher("ayobami", "lawal");
