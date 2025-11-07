@@ -11,7 +11,7 @@ interface Director extends Teacher {
 	numberOfReports: number;
 }
 
-const printTeacher = (firstName: string, lastName: string):string => {
+function printTeacher (firstName: string, lastName: string):string {
 	const firstLetter = firstName[0];
 	const result = `${firstLetter}. ${lastName}`;
 	return result;
