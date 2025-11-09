@@ -48,7 +48,7 @@ function createEmployee (salary:string | number): Director | Teacher {
 }
 
 
-const Subjects = "Math" | "History";
+type Subjects = "Math" | "History";
 function teachClass(todayClass: Subjects) {
 	if (todayClass === "Math")
 		return "Teaching Math";
