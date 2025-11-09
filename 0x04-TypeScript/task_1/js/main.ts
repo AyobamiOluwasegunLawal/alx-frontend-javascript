@@ -18,11 +18,11 @@ interface printTeacherFunction {
 interface Student {
 	firstName:string;
 	lastName:string;
-	workOnHomework():string;
-	displayName():string;
+	workOnHomework(): string;
+	displayName(): string;
 }
 
-class StudentClass {
+class StudentClass implements Student {
 	constructor (firstName:string, lastName:string){
 		this.firstName = firstName;
 		this.lastName = lastName;
