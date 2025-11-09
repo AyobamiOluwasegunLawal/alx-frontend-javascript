@@ -23,15 +23,22 @@ interface Student {
 }
 
 class StudentClass implements Student {
+	public firstName:string;
+	public lastName:string;
+
 	constructor (firstName:string, lastName:string){
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
 
-	workOnHomework() => "Currently working";
-	displayName() {
-		return `${firstName} ${lastName}`;
+	workOnHomework():string {
+		return "Currently working"
+	};
+
+	displayName():string {
+		return `${this.firstName} ${this.lastName}`;
 	}
+}
 
 function printTeacher({ firstName, lastName }:{ firstName:string; lastName:string }): string {
 	const firstName = firstName.charAt(0).toUpperCase();
