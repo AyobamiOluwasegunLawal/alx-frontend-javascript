@@ -15,6 +15,13 @@ interface printTeacherFunction {
 	(firstName:string, lastName: string):string;
 }
 
+interface Student {
+	firstName:string;
+	lastName:string;
+	workOnHomeWork():string;
+	displayName():string
+}
+
 class StudentClass {
 	firstName:string;
 	lastName:string;
