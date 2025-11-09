@@ -39,6 +39,8 @@ class Teacher implements TeacherInterface {
 }
 
 function createEmployee (salary:string | number) {
-	const numericSalary = Number(string);
-  return numericSalary < 500 ? new Teacher() : new Director();
+	const salary = Number(salary);
+	if (salary < 500) {
+		return numericSalary < 500 ? new Teacher() : new Director();
+	}
 }
