@@ -18,8 +18,8 @@ interface printTeacherFunction {
 interface Student {
 	firstName:string;
 	lastName:string;
-	workOnHomeWork():string;
-	displayName():string
+	workOnHomeWork(): string;
+	displayName(): string
 }
 
 class StudentClass {
