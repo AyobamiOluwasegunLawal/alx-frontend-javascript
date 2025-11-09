@@ -47,14 +47,12 @@ function createEmployee (salary:string | number): Director | Teacher {
 	}
 }
 
-function isDirector(employee: Director | Teacher): employee is Director {
-	return employee instanceof Director;
+
+function teachClass(todayClass) {
+	if (todayClass === "Math")
+		return "Teaching Math";
+	if (todayClass === "History")
+		return "Teaching History";
 }
 
-function executeWork(employee:Director | Teacher): string {
-	if (isDirector(employee)){
-			return employee.workDirectorTasks();
-	} else{
-			return employee.workTeacherTasks();
-	}
-}
+
