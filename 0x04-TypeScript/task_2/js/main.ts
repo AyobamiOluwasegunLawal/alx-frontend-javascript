@@ -48,8 +48,8 @@ function createEmployee (salary:string | number): Director | Teacher {
 }
 
 
-type Subjects = "Math" | "History";
-function teachClass(todayClass: Subjects) {
+interface Subjects = "Math" | "History";
+function teachClass(todayClass:Subjects): string {
 	if (todayClass === "Math")
 		return "Teaching Math";
 	if (todayClass === "History")
