@@ -15,16 +15,9 @@ interface printTeacherFunction {
 	(firstName:string, lastName: string):string;
 }
 
-interface Student {
+class StudentClass {
 	firstName:string;
 	lastName:string;
-	workOnHomework(): string;
-	displayName(): string;
-}
-
-class StudentClass implements Student {
-	public firstName:string;
-	public lastName:string;
 
 	constructor (firstName:string, lastName:string){
 		this.firstName = firstName;
